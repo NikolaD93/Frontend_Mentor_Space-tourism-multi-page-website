@@ -2,8 +2,20 @@
   background-image: url(../assets/crew/background-crew-desktop.jpg);
 }
 
+@media screen and (max-width: 768px) {
+  .crew {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+  }
+}
+
 .hero {
   padding-top: 76px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 34px;
+  }
 }
 
 .hero h5 span {
@@ -52,12 +64,8 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .container {
-    padding-inline: 38px;
-  }
-
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
     text-align: center;
   }
@@ -66,11 +74,24 @@
     margin-bottom: 60px;
   }
 
-  .content img {
-    max-width: 456px;
+  .content .image {
+    border-bottom: 1px solid #383b4b;
+    width: 100%;
   }
 
-  .dots {
-    justify-content: center; 
+  .content .image img {
+    width: 200px;
+    margin-inline: auto;
+  }
+
+  .content .text .dots {
+    justify-content: center;
+    gap: 15px;
+    margin-block: 30px;
+  }
+
+  .content .text .dots .dot {
+    width: 10px;
+    height: 10px;
   }
 }

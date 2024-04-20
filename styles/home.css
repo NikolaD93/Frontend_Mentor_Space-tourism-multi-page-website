@@ -2,6 +2,12 @@
   background-image: url(../assets/home/background-home-desktop.jpg);
 }
 
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+}
+
 .hero {
   padding-top: 250px;
   padding-bottom: 130px;
@@ -60,22 +66,31 @@
 @media screen and (max-width: 1080px) {
   .hero {
     flex-direction: column;
-    padding: 106px 0 90px 0;
+    padding-top: 60px;
+    padding-inline: 24px;
     align-items: center;
     justify-content: center;
-    gap: 156px;
+    gap: 100px;
     text-align: center;
   }
 
   .hero h5 {
-    font-size: 20px;
-  }
-
-  .description {
     font-size: 1rem;
   }
 
-  .hero .explore .explore-btn:hover::before  {
-    left: 0
+  .description {
+    font-size: 15px;
+  }
+
+  .hero .explore .explore-btn {
+    width: 150px;
+    height: 150px;
+  }
+  .hero .explore .explore-btn p {
+    font-size: 20px;
+  }
+
+  .hero .explore .explore-btn:hover::before {
+    left: 0;
   }
 }

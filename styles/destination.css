@@ -2,6 +2,12 @@
   background-image: url(../assets/destination/background-destination-desktop.jpg);
 }
 
+@media screen and (max-width: 768px) {
+  .destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+}
+
 .hero {
   padding-top: 76px;
   padding-bottom: 120px;
@@ -30,6 +36,12 @@
   height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .content .image img {
+    width: 170px;
+  }
+}
+
 .content .text h2 {
   margin-block: 40px;
 }
@@ -56,6 +68,32 @@
 
 .text .destination-details p:first-of-type {
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .content .text ul {
+    gap: 26px;
+  }
+  .content .text ul a {
+    font-size: 14px;
+  }
+  .content .text ul a:hover {
+    padding-bottom: 8px;
+  }
+
+  .content .text ul a.active {
+    padding-bottom: 8px;
+  }
+
+  .content .text h2 {
+    margin-bottom: 10px;
+  }
+  .text .destination-details {
+    flex-direction: column;
+    padding-top: 32px;
+    margin-top: 33px;
+    gap: 32px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
